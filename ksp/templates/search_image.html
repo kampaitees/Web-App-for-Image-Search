@@ -1,0 +1,221 @@
+    {% load static %}
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="{% static 'img/fav.png' %}">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Drag and drop upload Image</title>
+  	<style>
+                {
+                box-sizing: border-box;
+                }
+
+                body {
+                margin: 0;
+                font-family: Arial;
+                font-size: 17px;
+                }
+
+                #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%; 
+                min-height: 100%;
+                }
+
+                .content {
+                position: fixed;
+                bottom: 0;
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+                }
+
+                #button {
+                width: 100px;
+                height : 35px;
+                font-size: 20px;
+                border: doubles;
+                background: #1ae8de;
+                color: #010917;
+                cursor: pointer;
+                }
+
+                #button:hover {
+                background: #ddf799;
+                color: black;
+                transition: .5s ease;
+                }
+
+                #id_criminal_name {
+                width: 200px;
+                height : 25px;
+                font-size: 20px;
+                border: doubles;
+                background: #d4faf9;
+                color: #010917;
+                cursor: pointer;
+                }
+
+                #id_criminal_name:hover {
+                background: #ddf799;
+                color: black;
+                }
+
+                
+                #id_criminal_img {
+                width: 160px;
+                height : 18px;
+                font-size: 12px;
+                border: doubles;
+                background: #d4faf9;
+                color: #010917;
+                cursor: pointer;
+                }
+
+                #id_criminal_img:hover {
+                background: #ddf799;
+                color: black;
+                }
+
+                #submit {
+                width: 200px;
+                height : 25px;
+                font-size: 20px;
+                border: doubles;
+                background: #d4faf9;
+                color: #010917;
+                cursor: pointer;
+                }
+
+                #submit:hover {
+                background: #ddf799;
+                color: black;
+                }
+
+                ::placeholder { 
+                color: black;
+                opacity: 0.15; 
+                }
+
+                {% comment %} #nav-menu-container  {% endcomment %}
+                #nav-menu-container {
+                position: absolute;
+                left: 0px;
+                height: 40px;
+                {% comment %} background-color: #2C64B4; {% endcomment %}
+                width: 100%;
+                text-align: right;
+            }
+            #nav-menu-container ul {
+                margin: 0;
+                padding: 0.2cm;
+                display: inline-block;
+            }
+				
+				
+
+					
+  	</style>
+		{% comment %} <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700' %}" rel="stylesheet">  {% endcomment %}
+			<!--
+			CSS
+			============================================= -->
+			
+			<link rel="stylesheet" href="{% static 'css/main.css' %}">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			  	<div class="container header-top">
+			  		<div class="row">
+				  		<div class="col-6 top-head-left">				  			
+				  			<ul>
+		  					<li><a href="https://www.facebook.com/profile.php?id=100015951366749"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/RishiSh94075"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/rishi-sharma-278999152/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://github.com/kampaitees"><i class="fa fa-github"></i></a></li>
+				  			</ul>
+				  		</div>
+				  					  			
+			  		</div>
+			  	</div>
+			  	<hr>
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="home"><img src="{% static 'img/logo.png' %}" alt="" title="" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="home">Home</a></li>
+						  <li><a href="upload-database">Upload To Database</a></li>	
+				          <li><a href="about">About Us</a></li>
+				          <li><a href="team">Team</a></li>
+				          <li><a href="blog-home">Blog</a></li>	
+				          <li><a href="contact">Contact</a></li>
+						  			          
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+			
+			<video autoplay muted loop id="myVideo">
+            <source src="media/video_round.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <form method = "post" enctype="multipart/form-data"> 
+                {% csrf_token %}
+                <div class="container">
+                        <div class="heading" >
+                            <h1 style="font-family:courier; color:cyan;">Enter Name & Upload image</h1>
+                        </div>
+                        <div class="img-uploader">
+                            {{ form.as_p }}
+                        </div>
+                        <div class = "heading">
+                            <h1 style="font-family:courier; color:cyan;">Enter Num of Req. Images</h1>
+                            Num. of Images: <input type = "number" name = "num" id = 'submit' placeholder = "Enter a number" required>
+                        </div>
+                        <br>
+                        <button id = "button" type="submit">Upload</button>
+                    </div>
+            </form> 
+        </div>
+
+			<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="{% static 'js/easing.min.js' %}"></script>			
+			<script src="{% static 'js/hoverIntent.js' %}"></script>
+			<script src="{% static 'js/superfish.min.js' %}"></script>	
+			<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+			<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>	
+			<script src="{% static 'js/owl.carousel.min.js' %}"></script>			
+			<script src="{% static 'js/jquery.sticky.js' %}"></script>
+			<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>	
+			<script src="{% static 'js/waypoints.min.js' %}"></script>
+			<script src="{% static 'js/jquery.counterup.min.js' %}"></script>					
+			<script src="{% static 'js/parallax.min.js' %}"></script>		
+			<script src="{% static 'js/mail-script.js' %}"></script>	
+			<script src="{% static 'js/main.js' %}"></script>	
+		</body>
+	</html>
+
+
+
