@@ -7,7 +7,6 @@
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/2019-07-13%20(6).png"/>
-  <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/2019-07-13%20(8).png"/>
   <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/2019-07-13%20(10).png"/>
 </p>
 
@@ -162,12 +161,14 @@ See deployment for notes on how to deploy the project on a live system.
 ## Run
 
 #### After downloading all the dependencies you have to open the folder in VS code and run the following commands on the terminal:- 
- ```
-   1. python manage.py makemigrations 
-   2. python manage.py sqlmigrate pages 0001 
-   3. python manage.py migrate 
-   4. python manage.py runserver
- ```
+   
+   For doing migrations 
+    `$ python manage.py makemigrations`
+    `$ python manage.py sqlmigrate pages 0001` 
+    `$ python manage.py migrate`
+   
+   For running local server
+    `$ python manage.py runserver`
  
 ## Knowledge Transfer Report
 
