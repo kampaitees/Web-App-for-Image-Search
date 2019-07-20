@@ -38,16 +38,17 @@ See deployment for notes on how to deploy the project on a live system.
 
 ### What things you need to install the software and how to install them
 
-#### Following are the dependencies of python which you have to install in your system :- 
+#### Following are the dependencies of python which you have to install in your system
+ ``` 
   - python 3.6.8 
   - python pip 
- 
+ ```
 #### After installing python and pip you have to just write  
  
 “`pip install 'below library names'`” 
  
-#### To install below dependencies:-
- 
+#### To install below dependencies
+ ```
   - Django==2.2.2 
   - djangorestframework==3.9.4 
   - Keras==2.2.4 
@@ -65,19 +66,20 @@ See deployment for notes on how to deploy the project on a live system.
   - termcolor==1.1.0 
   - urllib3==1.25.3 
   - virtualenv==16.6.1 
- 
- 
- 
+ ```
  
 #### For the following below dependencies you have download them separately 
+```
   - cmake==3.14.4 
   - dlib==19.17.0 
   - Microsoft Visual Studio code(For running the code you can use your own editor if you want)
   - Postgresql(For database purpose, storing images, 128d encodings and name of images
+```
 
 #### After downloading all the dependencies you have to open the folder in VS code given by me and run the following commands :- 
- 
+ ```
    1. python manage.py makemigrations 
    2. python manage.py sqlmigrate pages 0001 
    3. python manage.py migrate 
    4. python manage.py runserver
+ ```
