@@ -29,7 +29,7 @@ This website I had created as this was my Internship task which I was doing in B
 under IISC professor Mr. Ambedkar. Task was to create a website to do criminal image search from database, thereby saving
 there time instead of searching manually.
 
-## Getting 
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 See deployment for notes on how to deploy the project on a live system.
@@ -163,6 +163,15 @@ See deployment for notes on how to deploy the project on a live system.
    4. python manage.py runserver
  ```
  
+## Knowledge Transfer Report
+
+[:point_right: More Details here](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Knowledge%20Transfer.pdf)
+
+## Internship Report and Final Presentation
+
+  - [:point_right: Internship Report](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20Report.pdf)
+  - [:point_right: Final Presentation](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20ppt.pdf)
+
 ## Author
   - [Rishi Sharma](https://github.com/kampaitees)
 
