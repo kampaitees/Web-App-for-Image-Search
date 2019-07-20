@@ -89,6 +89,7 @@ See deployment for notes on how to deploy the project on a live system.
  so I'm getting errors while installing the library so I'm not able to deploy the website till now.
  
  ## Built With
+ ```
   -[Django](https://www.djangoproject.com/) - Framework used
   -[Facenet.h5](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn) - Model used for predicting encodings
   -[Dlib model](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) - 68 Landmark Predictor
@@ -99,4 +100,5 @@ See deployment for notes on how to deploy the project on a live system.
   -[Pillow](https://pypi.org/project/Pillow/) - For opening images
   -[Dlib](http://dlib.net/) - For facial alignment
   -[Postgresql](https://www.postgresql.org/) - Database handling
+  ```
   
