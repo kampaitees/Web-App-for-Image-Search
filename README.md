@@ -49,36 +49,36 @@ After installing python and pip you have to just write
  
 To install below dependencies 
  
-  `● Django==2.2.2 
-  ● djangorestframework==3.9.4 
-  ● Keras==2.2.4 
-  ● Keras-Applications==1.0.8
-  ● Keras-Preprocessing==1.1.0 
-  ● numpy==1.16.1 
-  ● opencv-contrib-python==3.2.0.7 
-  ● opencv-python==3.1.0.5 
-  ● Pillow==6.0.0 
-  ● psycopg2==2.8.3 
-  ● requests==2.22.0 
-  ● scipy==1.3.0 
-  ● tensorflow-estimator==1.13.0 
-  ● tensorflow==1.10.0 
-  ● termcolor==1.1.0 
-  ● urllib3==1.25.3 
-  ● virtualenv==16.6.1 `
+ `- Django==2.2.2 
+  - djangorestframework==3.9.4 
+  - Keras==2.2.4 
+  - Keras-Applications==1.0.8
+  - Keras-Preprocessing==1.1.0 
+  - numpy==1.16.1 
+  - opencv-contrib-python==3.2.0.7 
+  - opencv-python==3.1.0.5 
+  - Pillow==6.0.0 
+  - psycopg2==2.8.3 
+  - requests==2.22.0 
+  - scipy==1.3.0 
+  - tensorflow-estimator==1.13.0 
+  - tensorflow==1.10.0 
+  - termcolor==1.1.0 
+  - urllib3==1.25.3 
+  - virtualenv==16.6.1 `
  
  
  
  
 For the following below dependencies you have download them separately 
-  `● cmake==3.14.4 
-  ● dlib==19.17.0 
-  ● Microsoft Visual Studio code(For running the code you can use your own editor if you want)
-  ● Postgresql(For database purpose, storing images, 128d encodings and name of images`
+ `- cmake==3.14.4 
+  - dlib==19.17.0 
+  - Microsoft Visual Studio code(For running the code you can use your own editor if you want)
+  - Postgresql(For database purpose, storing images, 128d encodings and name of images`
 
 After downloading all the dependencies you have to open the folder in VS code given by me and run the following commands :- 
  
-  `1. python manage.py makemigrations 
+   1. python manage.py makemigrations 
    2. python manage.py sqlmigrate pages 0001 
    3. python manage.py migrate 
-   4. python manage.py runserver`
+   4. python manage.py runserver
