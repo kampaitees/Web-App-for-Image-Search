@@ -162,12 +162,12 @@ See deployment for notes on how to deploy the project on a live system.
 
 #### After downloading all the dependencies you have to open the folder in VS code and run the following commands on the terminal:- 
    
-   For doing migrations 
+   #### For doing migrations 
     `$ python manage.py makemigrations`
     `$ python manage.py sqlmigrate pages 0001` 
     `$ python manage.py migrate`
    
-   For running local server
+   ##### For running local server
     `$ python manage.py runserver`
  
 ## Knowledge Transfer Report
