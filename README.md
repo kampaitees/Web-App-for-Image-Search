@@ -1,4 +1,10 @@
 # Image-Search-from-Database
+
+## Internship Report and Final Presentation
+
+  - [:point_right: Internship Report](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20Report.pdf)
+  - [:point_right: Final Presentation](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20ppt.pdf)
+
 <p align="center">
   <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/2019-07-13%20(6).png"/>
   <img src = "https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/ksp/media/2019-07-13%20(8).png"/>
@@ -166,11 +172,6 @@ See deployment for notes on how to deploy the project on a live system.
 ## Knowledge Transfer Report
 
 [:point_right: More Details here](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Knowledge%20Transfer.pdf)
-
-## Internship Report and Final Presentation
-
-  - [:point_right: Internship Report](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20Report.pdf)
-  - [:point_right: Final Presentation](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20ppt.pdf)
 
 ## Author
   - [Rishi Sharma](https://github.com/kampaitees)
