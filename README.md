@@ -76,20 +76,12 @@ See deployment for notes on how to deploy the project on a live system.
   - Postgresql(For database purpose, storing images, 128d encodings and name of images
 ```
 
-#### After downloading all the dependencies you have to open the folder in VS code given by me and run the following commands :- 
- ```
-   1. python manage.py makemigrations 
-   2. python manage.py sqlmigrate pages 0001 
-   3. python manage.py migrate 
-   4. python manage.py runserver
- ```
- 
  ## Deployment
  I tried to deploy the website on Heroku platform but as this project includes dlib library which requires cmake to be installed
  so I'm getting errors while installing the library so I'm not able to deploy the website till now.
  
  ## Built With
- ```
+ 
   - [Django](https://www.djangoproject.com/) - Framework used
   - [Facenet.h5](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn) - Model used for predicting encodings
   - [Dlib model](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) - 68 Landmark Predictor
@@ -100,5 +92,82 @@ See deployment for notes on how to deploy the project on a live system.
   - [Pillow](https://pypi.org/project/Pillow/) - For opening images
   - [Dlib](http://dlib.net/) - For facial alignment
   - [Postgresql](https://www.postgresql.org/) - Database handling
+
+### Folder structure
+
 ```
+.
+└── KSP
+    ├── __pycache__
+    ├── ksp
+    │   ├── __pycache__
+    │   └── __init__.py
+    |   └── settings.py
+    |   └── urls.py
+    |   └──wsgi.py
+    ├── models
+    |   └── shape_predictor_68_face_landmarks.dat
+    |   └── facenet_keras.h5
+    |   └── haarcascade_frontalface_default.xml
+    ├── pages
+    │   ├── __pycache__
+    │   └── migrations
+    |       ├── __pycache__
+    |       └── ...
+    │   └── _init__.py
+    │   └── admin.py
+    │   └── apps.py
+    │   └── forms.py
+    │   └── models.py
+    │   └── tests.py
+    │   └── urls.py
+    │   └── views.py
+    |
+    ├── media
+    │   ├── search
+    |       └── ...
+    │   └── database
+    |       └── ... 
+    │   └── video_diamond.mp4
+    │   └── video_pink.mp4
+    │   └── video_round.mp4
+    |
+    ├── static
+    │   ├── css
+    │   └── fonts
+    │   └── img
+    │   └── js
+    │   └── scss
+    |
+    ├── templates
+    │	├── about.html
+    | └── blog-home.html
+    │	└── blog-single.html
+    │ └── contact.html
+    │ └── home.html
+    │ └── res.html
+    │ └── search_image.html
+    │ └── team.html
+    │ └── upload_database.html
+    |
+    └── manage.py
+```
+
+## Run
+
+#### After downloading all the dependencies you have to open the folder in VS code and run the following commands on the terminal:- 
+ ```
+   1. python manage.py makemigrations 
+   2. python manage.py sqlmigrate pages 0001 
+   3. python manage.py migrate 
+   4. python manage.py runserver
+ ```
+ 
+## Author
+  - [Rishi Sharma](https://github.com/kampaitees)
+
+See also the other contributor(https://github.com/Vampboy) who helped me in this project.
+
+## License
   
+  Apache  © [Rishi Sharma](https://github.com/kampaitees)
