@@ -22,7 +22,7 @@ show the similar images as output.
 </p>
 
 ## Demo Video
-[![Watch the demo Video]<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="50%">](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
+[Watch the demo Video](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
 
 ### Motivation
 This website I had created as this was my Internship task which I was doing in Bengaluru at KSP computer wing and working
