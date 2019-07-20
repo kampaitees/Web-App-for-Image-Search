@@ -171,9 +171,9 @@ See deployment for notes on how to deploy the project on a live system.
 
    
    ##### For running local server
-    ```sh
+   ```sh
     $ python manage.py runserver
-    ```
+   ```
 ## Knowledge Transfer Report
 
 [:point_right: More Details here](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Knowledge%20Transfer.pdf)
