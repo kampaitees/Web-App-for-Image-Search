@@ -1,4 +1,4 @@
-# Image-Search-from-Database
+# Image Search from Database
 
   ### Internship Report and Final Presentation
 
