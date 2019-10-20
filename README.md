@@ -1,6 +1,6 @@
 # Image Search from Database
 
-  ### Internship Report and Final Presentation
+  ### Internship Report & Final Presentation
 
    - [:point_right: Internship Report](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20Report.pdf)
    - [:point_right: Final Presentation](https://github.com/kampaitees/Web-App-for-Image-Search/blob/master/KSP%20Internship%20ppt.pdf)
