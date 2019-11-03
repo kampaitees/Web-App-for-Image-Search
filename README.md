@@ -181,8 +181,6 @@ See deployment for notes on how to deploy the project on a live system.
 ## Author
   - [Rishi Sharma](https://github.com/kampaitees)
 
-See also the other [contributor](https://github.com/Vampboy) who helped me in this project.
-
 ## License
   
   Apache  © [Rishi Sharma](https://github.com/kampaitees)
