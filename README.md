@@ -27,7 +27,7 @@ show the similar images as output.
 </p>
 
 ## Demo Video
-[:point_right: Watch it here](https://drive.google.com/open?id=1iw-bVxwMIuGMh9eGh7p7fQYo-XU_Esr0)
+[:point_right: Watch it here](https://drive.google.com/file/d/1CfXgafvhMs2-sWO9SyPaXjTDyLGmUG-U/view?usp=sharing)
 
 ### Motivation
 This website I had created as this was my Internship task which I was doing in Bengaluru at KSP computer wing and working
